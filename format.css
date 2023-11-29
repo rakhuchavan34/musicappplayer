@@ -1,0 +1,250 @@
+body{
+    background-color: rgb(252, 246, 246);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav ul{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    color:white;
+}
+nav ul li{
+    padding: 0 8px;
+    text-align: center;
+    margin-top: 25px;
+
+}
+.brand{
+     align-items: center;
+    font-weight: bolder;
+    display: flex;
+    font-size: 1.4rem;
+    
+}
+.brand img{
+    width: 60px;
+    padding: 4px;
+    
+}
+.bottom{
+    position: sticky;
+    background-color: rgb(7, 7, 7);
+    height: 100px;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    color:rgb(243, 241, 241);
+    flex-direction: column;
+}
+.volumecontrol{
+ position:absolute;
+ right:10vw;
+ top:25px;
+}
+.container{
+    min-height:95vh;
+   background-image:url( /images/background.jpg);
+   justify-content: space-between;
+    background-repeat: none;
+    background-size: cover;
+    padding: 20px; 
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:row;
+   
+}
+
+
+.songList{
+    width: 25%;
+   
+}
+
+.icons{
+    margin-bottom: 20px;
+    padding: 0 ;
+    justify-content: center;
+    
+}
+.icons i{
+    margin-right: 30px;
+}
+#myProgressBar{
+    width:80vh;
+    cursor: pointer;
+}
+.nowPlaying {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the box both horizontally and vertically */
+    margin-top: 40px;
+    
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    height: 60vh;
+    width: 30%; /* Set the width as a percentage of the viewport width */
+}
+
+#nowPlayingImage {
+    width: 70%; /* Set the image width as a percentage of the "Now Playing" box */
+    height: 70%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nowPlayingDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.nowPlayingDetails span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Add these styles for the playlist creation section */
+.playlistbox {
+    background-color: #f0f0f0;
+    width: 25%;
+    height: 70vh;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.playlistbox div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#playlistInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#create {
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#create:hover {
+    background-color: rgb(157, 222, 242);
+}
+.currentplayingsong{
+    position:absolute;
+    left:3vh;
+    color:white;
+}
+#currentplayingsongimage{
+    height: 80px;
+    width: 80px;
+    margin-top: 2px;
+}
+#currentplayingsongname{
+    position: absolute;
+    top:20px;
+    
+}
+#currentplayingartist{
+    position: absolute;
+    bottom:25px;
+}
+
+#currentlyplaying{
+    height: 60px;
+    width:250px;
+    opacity:0;
+    
+
+}
+.gifimage{
+    left:40vh;
+    margin-left:110px;
+}
+/*@media screen and (max-width:768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    nav ul li{
+        width: 100%;
+        flex-grow: 0;
+
+    }
+    .brand{
+        margin-bottom: 10px;
+    }
+    .icons{
+        flex-direction: column;
+    }
+    .container{
+        padding: 10px;
+    }
+}*/
+.songItemContainer{
+    width: 100%;
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color:#edeaf1;
+    width:100%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+.songItem.active {
+    
+    
+    color:palevioletred;
+}  
+.icons i.active{
+    color: gray;
+}
